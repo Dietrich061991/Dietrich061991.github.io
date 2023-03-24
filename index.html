@@ -39,13 +39,24 @@
 		}
 
 		/* Estilização da imagem */
+		.imagem-container {
+			position: relative;
+		}
+
 		.imagem {
-			position: absolute;
-			top: 50px;
-			left: 0;
 			width: 100%;
 			height: auto;
-			z-index: -1;
+		}
+
+		.imagem-texto {
+			position: absolute;
+			top: 0;
+			left: 0;
+			color: white;
+			padding: 20px;
+			font-size: 24px;
+			line-height: 1.5;
+			z-index: 1;
 		}
 	</style>
 </head>
@@ -56,6 +67,11 @@
 		<a href="#">Contact</a>
 	</nav>
 
-	<img src="imagem1.jpg" alt="Imagem" class="imagem">
+	<div class="imagem-container">
+		<img src="imagem1.jpg" alt="Imagem" class="imagem">
+		<div class="imagem-texto">
+			Ready to make the biggest change in your business? We can help you simplify accounting and taxation. Contact us to find out how we can help you run your business more efficiently and effectively.
+		</div>
+	</div>
 </body>
 </html>
